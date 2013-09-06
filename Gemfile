@@ -37,3 +37,33 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'cancan'
+gem 'devise'
+gem 'figaro'
+gem 'rolify'
+gem 'thin'
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
+  gem 'guard-bundler'
+  gem 'guard-cucumber'
+  gem 'guard-rails'
+  gem 'hub', :require=>nil
+  gem 'quiet_assets'
+  gem 'rb-fchange', :require=>false
+  gem 'rb-fsevent', :require=>false
+  gem 'rb-inotify', :require=>false
+end
+
+group :test do
+  gem 'capybara'
+  gem 'cucumber-rails', :require=>false
+  gem 'database_cleaner', '1.0.1'
+  gem 'launchy'
+  gem 'machinist'
+  gem 'minitest-spec-rails'
+  gem 'minitest-wscolor'
+end
+
